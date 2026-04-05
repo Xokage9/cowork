@@ -1,0 +1,6 @@
+.git
+.gitignore
+.gocache
+.gopath
+coverage.out
+**/*_test.go
