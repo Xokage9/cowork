@@ -1,6 +1,28 @@
-﻿# Meeting Room Booking Service
+<div align="center">
 
-Сервис бронирования переговорок (Go + PostgreSQL + Docker Compose) с DDD-структурой.
+# Бронирование переговорок
+
+### Расписание, свободные слоты и брони
+
+Учебный backend на Go с PostgreSQL, HTTP API и тестами.
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-111827?style=flat-square&logo=jsonwebtokens&logoColor=white)
+
+</div>
+
+## Возможности
+
+| Задача | Реализация |
+|---|---|
+| Переговорки | Создание комнат и расписаний |
+| Свободное время | Генерация 30-минутных слотов по расписанию |
+| Бронирование | Проверка занятости, личные брони и отмена |
+| Доступ | Вход, JWT и разграничение ролей |
+| Хранение | PostgreSQL через pgx и in-memory репозиторий |
+| Проверки | Unit-, HTTP API- и repository-тесты |
 
 ## Архитектура
 - `app/entities/` — сущности, ошибки, инварианты, порты.
@@ -95,3 +117,4 @@ curl http://localhost:8080/_info
 docker compose down -v
 docker compose up -d db
 ```
+
